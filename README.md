@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-This is my Deploy static Air BnB repo
 =======
 <center> <h1>HBNB - The Console</h1> </center>
 
