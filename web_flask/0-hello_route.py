@@ -1,4 +1,4 @@
-#!/usr/binpython3
+#!/usr/bin/python3
 """ A script that starts a Flask web application
 It must be listening on port 500, 0.0.0.0
 It has one route, '/' that displayes 'Hello HBNB'
