@@ -29,14 +29,12 @@ def c(text):
     text = text.replace("_", " ")
     return "C {}".format(text)
 
-
+@app.route("/python/"), strict_slashes=False)
 @app.route("/python/(<text>)", strict_slashes=False)
-def python_text(text):
+def python_text(text="is cool"):
     """Displays 'python' followed by the value of 'text'"""
-    text = 'is cool'
     text = text.replace("_", " ")
-    value = f"Python {text}"
-    return "value"
+    return "python {}".format(text)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
