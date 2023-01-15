@@ -42,11 +42,7 @@ def python_text(text="is cool"):
 @app.route("/number/<int:n>", strict_slashes=False)
 def number_n(n):
     """Displays 'n' is a number only if n is an integer"""
-    if type(n) == int:
-        return "{} is a number".format(n)
-    else:
-        return ""404"
-
+    return "{} is a number".format(n)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
