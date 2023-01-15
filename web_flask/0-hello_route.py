@@ -3,7 +3,7 @@
 
 The app must be listening on port 500, 0.0.0.0
 Routes: 
-    /: that displays 'Hello HBNB'
+    /: that displays 'Hello HBNB!'
 """
 from flask import Flask
 
