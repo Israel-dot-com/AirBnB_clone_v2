@@ -33,9 +33,17 @@ def c(text):
 @app.route("/python/", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
 def python_text(text="is cool"):
-    """Displays 'python' followed by the value of 'text'"""
+    """Displays 'python' followed by the value of 'text'
+
+    Replaces any underscore in text with slashes
+
+    Default value should be 'is cool'
+    """
+
+
     text = text.replace("_", " ")
-    return "python {}".format(text)
+    return "Python {}".format(text)
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
